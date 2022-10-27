@@ -15,7 +15,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 db.sequelize.sync().then(() => {
-  console.log("working");
+  console.log("working...");
 });
 
 app.post("/signup", async (req, res) => {
@@ -50,4 +50,3 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
-
