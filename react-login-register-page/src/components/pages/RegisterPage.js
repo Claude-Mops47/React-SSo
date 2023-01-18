@@ -6,7 +6,7 @@ import "../../App.css";
 export default function SignUpPage() {
   const history = useHistory();
   async function create() {
-    const data = await axios.post("http://localhost:8080/signup", {
+    const data = await axios.post("http://localhost/signup", {
       userName,
       email,
       password,

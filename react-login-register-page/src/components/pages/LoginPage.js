@@ -11,7 +11,7 @@ export default function SignInPage() {
 
   const history = useHistory();
   async function Login() {
-    const data = await axios.post("http://localhost:8080/login", {
+    const data = await axios.post("http://localhost/login", {
       email,
       password,
     });
